@@ -1,0 +1,57 @@
+{
+    "name": "hoangkhacphuc/zalo_bot",
+    "description": "A PHP library for building Zalo chatbots. This library works in plain PHP, Laravel, or any PHP framework. It provides a set of Data Transfer Objects (DTOs), exceptions, and helper methods to interact with the Zalo API and handle messages safely.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zalo",
+        "bot",
+        "chatbot",
+        "php",
+        "api",
+        "sdk",
+        "library",
+        "messaging",
+        "automation",
+        "webhook",
+        "hoangkhacphuc"
+    ],
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hoangkhacphuc\\ZaloBot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hoangkhacphuc\\ZaloBot\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hoangkhacphuc",
+            "email": "hoangkhacphuc.dev@gmail.com",
+            "homepage": "https://github.com/hoangkhacphuc"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.10",
+        "tekvn/php-enum": "^1.2"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0|^3.0",
+        "phpstan/phpstan": "^1.0|^2.0",
+        "laravel/tinker": "^2.10"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
