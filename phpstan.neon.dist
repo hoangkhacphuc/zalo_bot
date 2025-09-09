@@ -1,0 +1,10 @@
+parameters:
+  level: 7
+  paths:
+    - src
+  reportUnmatchedIgnoredErrors: false
+  ignoreErrors:
+    - '#no value type specified in iterable type array#'
+    - '#Function config_path not found#'
+
+

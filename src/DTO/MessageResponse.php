@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 namespace Hoangkhacphuc\ZaloBot\DTO;
@@ -11,8 +12,8 @@ class MessageResponse
     /**
      * MessageResponse constructor.
      *
-     * @param string $messageId  Unique identifier of the message.
-     * @param string $date       Message creation timestamp (string or Unix time).
+     * @param  string  $messageId  Unique identifier of the message.
+     * @param  string  $date  Message creation timestamp (string or Unix time).
      */
     public function __construct(
         public readonly string $messageId,
@@ -22,14 +23,12 @@ class MessageResponse
     /**
      * Create a MessageResponse object from an associative array (typically API response).
      *
-     * @param array $data Raw message response data.
-     *
-     * @return self
+     * @param  array  $data  Raw message response data.
      */
     public static function fromArray(array $data): self
     {
-        $messageId = !empty($data['message_id']) ? (string) $data['message_id'] : '';
-        $dateValue = !empty($data['date']) ? $data['date'] : time();
+        $messageId = ! empty($data['message_id']) ? (string) $data['message_id'] : '';
+        $dateValue = ! empty($data['date']) ? $data['date'] : time();
         $date = (string) $dateValue;
 
         return new self(
@@ -37,5 +36,4 @@ class MessageResponse
             date: $date,
         );
     }
-
 }

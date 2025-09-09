@@ -1,8 +1,7 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 namespace Hoangkhacphuc\ZaloBot\Exceptions;
 
-class DeleteWebhookException extends BaseException
-{
-}
+class DeleteWebhookException extends BaseException {}

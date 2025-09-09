@@ -1,8 +1,7 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 namespace Hoangkhacphuc\ZaloBot\Exceptions;
 
-class PostDataEmptyException extends BaseException
-{
-}
+class PostDataEmptyException extends BaseException {}

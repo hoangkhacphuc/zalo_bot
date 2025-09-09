@@ -1,8 +1,7 @@
-<?php 
+<?php
+
 declare(strict_types=1);
 
 namespace Hoangkhacphuc\ZaloBot\Exceptions;
 
-class SendMessageException extends BaseException
-{
-}
+class SendMessageException extends BaseException {}
